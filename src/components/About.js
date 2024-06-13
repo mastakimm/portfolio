@@ -12,7 +12,7 @@ const About = React.forwardRef((props, ref) => {
         >
             <div className="flex items-center justify-center w-full p-10">
                 <h4
-                    className="text-center text-2xl border-b-2 border-black"
+                    className="text-center text-2xl sm:text-4xl md:text-3xl lg:text-3xl border-b-2 border-black"
                     style={{
                         fontFamily: 'Comfortaa, sans-serif',
                         maxWidth: '700px',
@@ -22,7 +22,7 @@ const About = React.forwardRef((props, ref) => {
                     <b>ABOUT ME</b>
                 </h4>
             </div>
-            <div className="flex items-center justify-center w-full pt-10 pb-16">
+            <div className="flex items-center justify-center w-full pt-10 pb-16 p-8">
                 <h4
                     className="text-center text-2xl"
                     style={{

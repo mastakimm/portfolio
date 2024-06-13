@@ -33,7 +33,7 @@ const Contact = React.forwardRef((props, ref) => {
         >
             <div className="flex flex-col w-full max-w-2xl">
                 <h4
-                    className="text-3xl font-bold text-center pb-10"
+                    className="text-2xl sm:text-4xl md:text-3xl lg:text-3xl font-bold text-center pb-10"
                     style={{ fontFamily: 'Comfortaa, sans-serif' }}
                 >
                     CONTACT
