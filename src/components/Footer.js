@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <>
             <div className="bg-black flex flex-col lg:flex-row">
-                <div className="p-28 w-full lg:w-1/2 flex flex-col items-center justify-center">
+                <div className="p-4 sm:p-12 md:p-16 lg:p-20 xl:p-24 2xl:p-24 w-full lg:w-1/2 flex flex-col items-center justify-center">
                     <h4 className="text-center text-white font-bold pb-12">
                         ANTOINE FAWER
                     </h4>

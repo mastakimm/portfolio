@@ -24,7 +24,7 @@ const Contact = React.forwardRef((props, ref) => {
         <section
             id="contact"
             ref={ref}
-            className="min-h-screen flex items-center justify-center p-20"
+            className="min-h-screen flex items-center justify-center py-20"
             style={{
                 backgroundImage: `url(${contactSectionBackgroundImage})`,
                 backgroundSize: "cover",
@@ -38,7 +38,6 @@ const Contact = React.forwardRef((props, ref) => {
                 >
                     CONTACT
                 </h4>
-                {/*         Pour le <p> Mettre la même couleur que le background image (pipette)        */}
                 <p
 
                     className="text-center text-2xl font-bold pb-10"
