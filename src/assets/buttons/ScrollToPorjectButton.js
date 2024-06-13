@@ -10,11 +10,12 @@ const ScrollToSectionButton = ({ sectionRef, buttonText }) => {
     return (
         <button
             onClick={scrollToSection}
-            className="shake bg-button-red text-white font-bold py-4 px-24 rounded-lg transition duration-300 mt-4 border border-gray-800 shadow-lg hover:bg-purple-400"
+            className="shake bg-button-red text-white font-bold py-4 px-24 rounded-lg transition duration-300 mt-4 border border-gray-800 shadow-lg hover:bg-purple-400 flex items-center justify-center"
             style={{
                 fontFamily: 'Comfortaa, sans-serif',
                 fontWeight: 'bold',
-                letterSpacing: '0.05em'
+                letterSpacing: '0.05em',
+                width: '150px'
             }}
         >
             {buttonText}

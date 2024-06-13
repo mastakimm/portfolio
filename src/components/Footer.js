@@ -34,8 +34,8 @@ const Footer = () => {
             </div>
             <div className="w-full bg-black">
                 <hr className="border-gray-500"/>
-                <div className="py-4 text-center text-white">
-                    &copy; {new Date().getFullYear()} Antoine Fawer. All rights reserved.
+                <div className="py-4 text-center text-xs text-white">
+                    &copy; 2024 Antoine Fawer. All rights reserved.
                 </div>
             </div>
         </>

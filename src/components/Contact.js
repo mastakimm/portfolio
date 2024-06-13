@@ -32,12 +32,12 @@ const Contact = React.forwardRef((props, ref) => {
             }}
         >
             <div className="flex flex-col w-full max-w-2xl">
-                <h4
+                {/*<h4
                     className="text-2xl sm:text-4xl md:text-3xl lg:text-3xl font-bold text-center pb-10"
                     style={{ fontFamily: 'Comfortaa, sans-serif' }}
                 >
                     CONTACT
-                </h4>
+                </h4>*/}
                 <p
 
                     className="text-center text-2xl font-bold pb-10"
