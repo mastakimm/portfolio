@@ -32,14 +32,8 @@
 }
 
 /*      Carousel        */
-.carousel {
-    display: flex;
-    overflow: hidden;
-    position: relative;
+.slick-slide > div {
+    margin: 0 10px;
 }
 
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease;
-    will-change: transform;
-}
+
