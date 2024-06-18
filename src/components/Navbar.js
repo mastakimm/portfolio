@@ -48,20 +48,20 @@ const Navbar = ({ sectionRefs }) => {
     }, [isScrolling]);
 
     return (
-        <nav className="bg-white shadow-lg fixed top-0 w-full z-10">
+        <nav className="bg-white shadow-lg fixed top-0 w-full z-10 2xl:py-6">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center">
                         <a href="/" className="flex items-center py-4 px-2">
-                            <span className="font-bold text-black text-lg">ANTOINE FAWER</span>
+                            <span className="font-bold text-black text-lg 2xl:text-3xl">ANTOINE FAWER</span>
                         </a>
                     </div>
-                    <div className="hidden md:flex items-center space-x-1">
+                    <div className="hidden md:flex items-center space-x-1 2xl:space-x-8">
                         {sections.map((section) => (
                             <a
                                 key={section}
                                 href={`#${section}`}
-                                className={`py-4 px-6 font-semibold ${
+                                className={`py-4 px-6 font-semibold 2xl:text-2xl ${
                                     activeSection === section ? 'text-black border-b-4 border-black' : 'text-gray-500 hover:text-black hover:underline transition duration-300'
                                 }`}
                                 onClick={(e) => {
@@ -76,7 +76,7 @@ const Navbar = ({ sectionRefs }) => {
                     <div className="md:hidden flex items-center">
                         <button className="outline-none mobile-menu-button" onClick={toggleMenu}>
                             <svg
-                                className="w-6 h-6 text-gray-500 hover:text-blue-500"
+                                className="w-6 h-6 text-gray-500 hover:text-blue-500 2xl:w-10 2xl:h-10"
                                 fill="none"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
@@ -95,7 +95,7 @@ const Navbar = ({ sectionRefs }) => {
                     <a
                         key={section}
                         href={`#${section}`}
-                        className={`block py-2 px-4 text-sm ${
+                        className={`block py-2 px-4 text-sm 2xl:text-lg ${
                             activeSection === section ? 'bg-gray-200' : 'hover:bg-gray-200'
                         }`}
                         onClick={(e) => {

@@ -18,13 +18,13 @@ const Home = React.forwardRef((props, ref) => {
         >
             <div className="text-black p-10 rounded-lg w-full max-w-4xl h-3/4">
                 <h1
-                    className="text-center text-4xl font-bold"
+                    className="text-center text-4xl 2xl:text-7xl font-bold"
                     style={{ fontFamily: 'Comfortaa, sans-serif' }}
                 >
                     <b>HEY, I'M ANTOINE FAWER</b>
                 </h1>
                 <h1
-                    className="text-center text-2xl mt-4 py-12"
+                    className="text-center text-2xl 2xl:text-4xl 2xl:tracking-wide  mt-4 py-12"
                     style={{ fontFamily: 'Comfortaa, sans-serif' }}
                 >
                     A Fullstack Web Developer building your Websites and Web Applications that lead to
