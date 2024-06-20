@@ -6,7 +6,10 @@ module.exports = {
     extend: {
       screens: {
         '3xl': '2000px',
+        '4xl': '2750px',
+        '5xl': '3500px',
       },
+
     },
   },
   variants: {
