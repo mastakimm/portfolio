@@ -58,7 +58,10 @@ const Navbar = ({ sectionRefs }) => {
             const sectionElement = sectionRefs[section]?.current;
             if (sectionElement) {
                 const rect = sectionElement.getBoundingClientRect();
-                if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+                if (
+                    (rect.top >= 0 && rect.top < window.innerHeight / 2) ||
+                    (rect.bottom >= window.innerHeight / 2 && rect.bottom <= window.innerHeight)
+                ) {
                     setActiveSection(section);
                 }
             }
@@ -66,25 +69,37 @@ const Navbar = ({ sectionRefs }) => {
     };
 
     useEffect(() => {
-        if (location.pathname === '/') {
-            window.addEventListener('scroll', handleScroll);
-        }
-        return () => {
+        const updateScrollListener = () => {
             if (location.pathname === '/') {
+                window.addEventListener('scroll', handleScroll);
+            } else {
                 window.removeEventListener('scroll', handleScroll);
             }
+        };
+
+        updateScrollListener();
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
             clearTimeout(scrollTimeoutRef.current);
         };
     }, [isScrolling, location.pathname]);
 
     useEffect(() => {
         if (location.pathname === '/' && targetSection) {
+            setActiveSection(targetSection); // Mise à jour de la section active
             setTimeout(() => {
                 scrollToSection(targetSection);
                 setTargetSection(null);
             }, 120);
         }
     }, [location.pathname, targetSection]);
+
+    useEffect(() => {
+        if (location.pathname === '/') {
+            handleScroll(); // Mise à jour de la section active à la charge de la page
+        }
+    }, [location.pathname]);
 
     return (
         <nav className="bg-white shadow-lg fixed top-0 w-full z-10 3xl:py-6">
