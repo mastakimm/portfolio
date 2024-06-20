@@ -8,7 +8,7 @@ const About = React.forwardRef((props, ref) => {
         <section
             id="about"
             ref={ref}
-            className="bg-gray-100 min-h-screen flex flex-col items-center justify-start pt-16 pb-16 3xl:pt-48"
+            className="bg-red-100 min-h-screen flex flex-col items-center justify-start pt-16 pb-16 3xl:pt-48"
         >
             <div className="flex items-center justify-center w-full p-10">
                 <h4
