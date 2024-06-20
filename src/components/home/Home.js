@@ -21,7 +21,7 @@ const Home = React.forwardRef((props, ref) => {
                     className="text-center text-4xl 3xl:text-7xl 4xl:text-8xl 4xl:tracking-widest 5xl:text-9xl 5xl:tracking-widest font-bold"
                     style={{ fontFamily: 'Comfortaa, sans-serif' }}
                 >
-                    <b>HEY, I'M ANTOINE FAWER</b>
+                    <b>HEY, I'M ANTOINE OOOO</b>
                 </h1>
                 <h1
                     className="text-center text-2xl 3xl:text-4xl 3xl:tracking-wide 4xl:text-5xl 4xl:tracking-widest 5xl:text-4x6 5xl:tracking-widest mt-4 py-12"
