@@ -5,12 +5,12 @@ const Footer = () => {
     return (
         <>
             <div className="bg-black flex flex-col lg:flex-row">
-                <div className="p-4 sm:p-12 md:p-16 lg:p-20 xl:p-24 2xl:p-24 w-full lg:w-1/2 flex flex-col items-center justify-center">
-                    <h4 className="text-center text-white font-bold pb-12">
+                <div className="p-4 sm:p-12 md:p-16 lg:p-20 xl:p-24 3xl:p-24 w-full lg:w-1/2 flex flex-col items-center justify-center">
+                    <h4 className="text-center text-white font-bold pb-12 3xl:text-xl">
                         ANTOINE FAWER
                     </h4>
 
-                    <h4 className="text-center text-white whitespace-pre-wrap">
+                    <h4 className="text-center text-white whitespace-pre-wrap 3xl:text-xl">
                         A Fullstack Web Developer building your Websites
 
                         <br className="xl:block hidden"/>
@@ -19,7 +19,7 @@ const Footer = () => {
                     </h4>
                 </div>
                 <div className="p-10 w-full lg:w-1/2 flex flex-col items-center justify-center">
-                    <h4 className="text-center text-white font-bold pb-12">
+                    <h4 className="text-center text-white font-bold pb-12 3xl:text-xl">
                         SOCIAL
                     </h4>
                     <h4 className="text-center text-white font-bold flex flex-row">
@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
             <div className="w-full bg-black">
                 <hr className="border-gray-500"/>
-                <div className="py-4 text-center text-xs text-white">
+                <div className="py-4 text-center text-xs text-white 3xl:text-base">
                     &copy; 2024 Antoine Fawer. All rights reserved.
                 </div>
             </div>

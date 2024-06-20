@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import contactSectionBackgroundImage from "../assets/sections/contact_session_background.jpg";
+import contactSectionBackgroundImage from "../../assets/sections/contact_session_background.jpg";
 
 const Contact = React.forwardRef((props, ref) => {
     const form = useRef();
@@ -24,29 +24,27 @@ const Contact = React.forwardRef((props, ref) => {
         <section
             id="contact"
             ref={ref}
-            className="min-h-screen flex items-center justify-center py-20"
+            className="min-h-screen flex items-center py-20 flex-col"
             style={{
                 backgroundImage: `url(${contactSectionBackgroundImage})`,
                 backgroundSize: "cover",
                 backgroundPosition: 'center'
             }}
         >
-            <div className="flex flex-col w-full max-w-2xl">
-                {/*<h4
-                    className="text-2xl sm:text-4xl md:text-3xl lg:text-3xl font-bold text-center pb-10"
-                    style={{ fontFamily: 'Comfortaa, sans-serif' }}
-                >
-                    CONTACT
-                </h4>*/}
+            <div className="flex flex-col w-full max-w-2xl 3xl:pb-20">
                 <p
 
-                    className="text-center text-2xl font-bold pb-10"
+                    className="text-center text-2xl 2xl:text-3xl 3xl:text-4xl font-bold pb-10"
                     style={{ fontFamily: 'Comfortaa, sans-serif' }}
                 >
                     Feel free to Contact me by submitting the form below and I will get back to you as soon as possible
                 </p>
-                <div className="bg-gray-100 shadow-2xl p-10 rounded-lg w-full max-w-2xl border-4 border-gray-100">
-                    <form ref={form} onSubmit={sendEmail} className="flex flex-col space-y-6">
+            </div>
+
+            <div className="flex flex-col w-full max-w-2xl 3xl:max-w-5xl 3xl:h-6/6">
+                <div
+                    className="bg-gray-100 shadow-2xl p-10 rounded-lg w-full min-w-full max-w-2xl border-4 border-gray-100">
+                    <form ref={form} onSubmit={sendEmail} className="flex flex-col space-y-4 3xl:space-y-10">
                         <label className="text-xl">Name</label>
                         <input
                             type="text"

@@ -20,15 +20,37 @@
 
 /*      Section style       */
 .bg-button-red {
-    background: #c96a6a
+    background:  hsl(12,98%,77%)
 }
 
 .bg-button-red:hover {
-    background: #d96e6e;
+    background: hsl(12, 86%, 67%)
 }
 
 .bg-white {
     background: hsl(240,20%,98%);
+}
+
+/*      Skills style       */
+.skill {
+    position: relative;
+    overflow: hidden;
+}
+.skill::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: hsl(12, 86%, 67%);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.skill:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /*      Carousel        */

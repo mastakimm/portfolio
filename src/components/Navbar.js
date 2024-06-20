@@ -1,10 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = ({ sectionRefs }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('home');
     const [isScrolling, setIsScrolling] = useState(false);
+    const [targetSection, setTargetSection] = useState(null);
     const scrollTimeoutRef = useRef(null);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const sections = ['home', 'about', 'projects', 'contact'];
 
@@ -13,10 +17,32 @@ const Navbar = ({ sectionRefs }) => {
     };
 
     const handleSectionClick = (section) => {
+        if (location.pathname !== '/') {
+            setTargetSection(section);
+            navigate('/');
+        } else {
+            scrollToSection(section);
+        }
+    };
+
+    const scrollToSection = (section) => {
         setIsScrolling(true);
         setActiveSection(section);
         if (sectionRefs[section] && sectionRefs[section].current) {
-            sectionRefs[section].current.scrollIntoView({ behavior: 'smooth' });
+            const scrollOptions = {
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest'
+            };
+
+            if (section === 'contact') {
+                window.scrollTo({
+                    top: sectionRefs[section].current.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            } else {
+                sectionRefs[section].current.scrollIntoView(scrollOptions);
+            }
         }
 
         clearTimeout(scrollTimeoutRef.current);
@@ -29,7 +55,7 @@ const Navbar = ({ sectionRefs }) => {
         if (isScrolling) return;
 
         sections.forEach((section) => {
-            const sectionElement = sectionRefs[section].current;
+            const sectionElement = sectionRefs[section]?.current;
             if (sectionElement) {
                 const rect = sectionElement.getBoundingClientRect();
                 if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
@@ -40,43 +66,57 @@ const Navbar = ({ sectionRefs }) => {
     };
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
+        if (location.pathname === '/') {
+            window.addEventListener('scroll', handleScroll);
+        }
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            if (location.pathname === '/') {
+                window.removeEventListener('scroll', handleScroll);
+            }
             clearTimeout(scrollTimeoutRef.current);
         };
-    }, [isScrolling]);
+    }, [isScrolling, location.pathname]);
+
+    useEffect(() => {
+        if (location.pathname === '/' && targetSection) {
+            setTimeout(() => {
+                scrollToSection(targetSection);
+                setTargetSection(null);
+            }, 120);
+        }
+    }, [location.pathname, targetSection]);
 
     return (
-        <nav className="bg-white shadow-lg fixed top-0 w-full z-10 2xl:py-6">
+        <nav className="bg-white shadow-lg fixed top-0 w-full z-10 3xl:py-6">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center">
-                        <a href="/" className="flex items-center py-4 px-2">
-                            <span className="font-bold text-black text-lg 2xl:text-3xl">ANTOINE FAWER</span>
-                        </a>
+                        <Link
+                            to="/"
+                            onClick={() => handleSectionClick('home')}
+                            className="flex items-center py-4 px-2 font-bold"
+                        >
+                            ANTOINE FAWER
+                        </Link>
                     </div>
-                    <div className="hidden md:flex items-center space-x-1 2xl:space-x-8">
+                    <div className="hidden md:flex items-center space-x-1 3xl:space-x-8">
                         {sections.map((section) => (
-                            <a
+                            <Link
                                 key={section}
-                                href={`#${section}`}
-                                className={`py-4 px-6 font-semibold 2xl:text-2xl ${
-                                    activeSection === section ? 'text-black border-b-4 border-black' : 'text-gray-500 hover:text-black hover:underline transition duration-300'
+                                to="/"
+                                onClick={() => handleSectionClick(section)}
+                                className={`py-4 px-6 font-semibold 3xl:text-2xl ${
+                                    activeSection === section ? 'text-black border-b-4 border-black' : 'text-gray-500 hover:text-black transition duration-300'
                                 }`}
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    handleSectionClick(section);
-                                }}
                             >
                                 {section.charAt(0).toUpperCase() + section.slice(1)}
-                            </a>
+                            </Link>
                         ))}
                     </div>
                     <div className="md:hidden flex items-center">
                         <button className="outline-none mobile-menu-button" onClick={toggleMenu}>
                             <svg
-                                className="w-6 h-6 text-gray-500 hover:text-blue-500 2xl:w-10 2xl:h-10"
+                                className="w-6 h-6 text-gray-500 hover:text-blue-500 3xl:w-10 3xl:h-10"
                                 fill="none"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
@@ -92,19 +132,16 @@ const Navbar = ({ sectionRefs }) => {
             </div>
             <div className={`mobile-menu ${isOpen ? '' : 'hidden'} md:hidden`}>
                 {sections.map((section) => (
-                    <a
+                    <Link
                         key={section}
-                        href={`#${section}`}
-                        className={`block py-2 px-4 text-sm 2xl:text-lg ${
+                        to="/"
+                        onClick={() => handleSectionClick(section)}
+                        className={`block py-2 px-4 text-sm 3xl:text-lg ${
                             activeSection === section ? 'bg-gray-200' : 'hover:bg-gray-200'
                         }`}
-                        onClick={(e) => {
-                            e.preventDefault();
-                            handleSectionClick(section);
-                        }}
                     >
                         {section.charAt(0).toUpperCase() + section.slice(1)}
-                    </a>
+                    </Link>
                 ))}
             </div>
         </nav>
