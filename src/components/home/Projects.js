@@ -58,7 +58,7 @@ const Projects = React.forwardRef((props, ref) => {
                 <img
                     src={YZ_main_screen}
                     alt="YZ_main screen"
-                    className="w-full md:w-3/4 lg:w-2/3 xl:w-6/12 rounded-lg"
+                    className="w-full md:w-3/4 lg:w-2/3 xl:w-6/12 2xl:w-8/12 3xl:w-9/12 rounded-lg"
                 />
                 <div className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10">
                     <h3
@@ -94,7 +94,7 @@ const Projects = React.forwardRef((props, ref) => {
                 <img
                     src={BrainMaster_main_screen}
                     alt="ProjectDetails 1"
-                    className="w-full md:w-3/4 lg:w-2/3 xl:w-6/12 rounded-lg"
+                    className="w-full md:w-3/4 lg:w-2/3 xl:w-6/12 2xl:w-8/12 3xl:w-9/12 rounded-lg"
                 />
             </div>
             <div
@@ -102,7 +102,7 @@ const Projects = React.forwardRef((props, ref) => {
                 <img
                     src={ProjectImage1}
                     alt="ProjectDetails 1"
-                    className="w-full md:w-3/4 lg:w-2/3 xl:w-6/12 rounded-lg"
+                    className="w-full md:w-3/4 lg:w-2/3 xl:w-6/12 2xl:w-8/12 3xl:w-9/12 rounded-lg"
                 />
                 <div className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10">
                     <h3
