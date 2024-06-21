@@ -102,7 +102,7 @@ const About = React.forwardRef((props, ref) => {
                                 "WORDPRESS",
                                 "SEO",
                                 "TERMINAL",
-                                "REACT",
+                                "REACTJS",
                                 "TAILWIND",
                                 "GIT",
                                 "GITHUB",

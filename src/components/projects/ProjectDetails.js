@@ -43,7 +43,7 @@ const ProjectDetails = () => {
                     <SendToProjectUrl url={project.url} />
                 </div>
             </section>
-            <section className="bg-gray-100 min-h-screen py-16 3xl:py-48 flex flex-col items-center">
+            <section className="min-h-screen py-16 3xl:py-48 flex flex-col items-center">
                 <div className="flex flex-col justify-center items-center w-full pt-24 h-[650px]">
                     <img
                         src={project.image}
