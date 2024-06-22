@@ -58,7 +58,7 @@ const Projects = React.forwardRef((props, ref) => {
                 <img
                     src={YZ_main_screen}
                     alt="YZ_main screen"
-                    className="w-full md:w-3/4 lg:w-2/3 xl:w-5/12 2xl:w-6/12 3xl:w-7/12 rounded-lg"
+                    className="w-full md:w-3/4 lg:w-2/3 xl:w-5/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
                 />
                 <div className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10">
                     <h3
@@ -67,7 +67,7 @@ const Projects = React.forwardRef((props, ref) => {
                     </h3>
                     <p className="text-xl sm:text-xl md:text-2xl lg:text-xl xl:text-lg 3xl:text-3xl py-4">
                         YZ, a social network resembling Twitter, lets you share moments and engage with your community.
-                        Stay informed and connected with Y's user-friendly platform. Experience social networking at its best.
+                        Stay informed and connected with YZ's user-friendly platform. Experience social networking at its best.
                     </p>
                     <div
                         className="flex justify-center items-center sm:block md:block lg:block xl:block 2xl:block 3xl:block">
