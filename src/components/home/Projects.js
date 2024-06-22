@@ -21,12 +21,12 @@ const project1 = {
 const project2 = {
     title: "BrainMaster",
     description: "This page contains the case study of BrainMaster ProjectDetails which includes the ProjectDetails Overview, Tools Used and Live Links to the official product.",
-    backgroundImage: "../../assets/sections/smartmockups_brainMaster.png",
-    image: "../../assets/sections/project_section_project_1.png",
+    backgroundImage: "../../assets/sections/home_section_background.jpg",
+    image: "../../assets/sections/smartmockups_brainMaster.png",
     overview: "This is a brief description of the project. This is a brief description of the project.",
     tools: ["HTML", "CSS", "PHP", "SYMFONY", "SQL", "GIT", "GITHUB"],
-    url: "https://example.com",
-    liveUrl: "https://live.example.com"
+    url: "https://github.com/mastakimm/BrainMaster/tree/master",
+    liveUrl: "https://github.com/mastakimm/BrainMaster/tree/master"
 };
 
 const project3 = {
@@ -58,7 +58,7 @@ const Projects = React.forwardRef((props, ref) => {
                 <img
                     src={YZ_main_screen}
                     alt="YZ_main screen"
-                    className="w-full md:w-3/4 lg:w-2/3 xl:w-6/12 2xl:w-8/12 3xl:w-9/12 rounded-lg"
+                    className="w-full md:w-3/4 lg:w-2/3 xl:w-5/12 2xl:w-6/12 3xl:w-7/12 rounded-lg"
                 />
                 <div className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10">
                     <h3
@@ -94,7 +94,7 @@ const Projects = React.forwardRef((props, ref) => {
                 <img
                     src={BrainMaster_main_screen}
                     alt="ProjectDetails 1"
-                    className="w-full md:w-3/4 lg:w-2/3 xl:w-6/12 2xl:w-8/12 3xl:w-9/12 rounded-lg"
+                    className="w-full md:w-3/4 lg:w-2/3 xl:w-5/12 2xl:w-6/12 3xl:w-7/12  rounded-lg"
                 />
             </div>
             <div
@@ -102,7 +102,7 @@ const Projects = React.forwardRef((props, ref) => {
                 <img
                     src={ProjectImage1}
                     alt="ProjectDetails 1"
-                    className="w-full md:w-3/4 lg:w-2/3 xl:w-6/12 2xl:w-8/12 3xl:w-9/12 rounded-lg"
+                    className="w-full md:w-3/4 lg:w-2/3 xl:w-5/12 2xl:w-6/12 3xl:w-7/12 rounded-lg"
                 />
                 <div className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10">
                     <h3
