@@ -11,7 +11,7 @@ const project1 = {
     title: "YZ",
     description: "This page contains the case study of YZ ProjectDetails which includes the ProjectDetails Overview, Tools Used and Live Links to the official product.",
     backgroundImage: "../../assets/sections/home_section_background.jpg",
-    image: "../../assets/sections/smartmockups_brainMaster.png",
+    image: "../../assets/sections/smartmockups_lxohimdh.png",
     overview: "This is a brief description of the project. This is a brief description of the project.",
     tools: ["HTML", "CSS", "PHP", "LARAVEL", "REACTJS", "SQL", "GIT", "GITHUB"],
     url: "https://yz-epitech.eu",
