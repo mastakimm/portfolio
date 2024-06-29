@@ -34,7 +34,7 @@ const Carousel = () => {
     };
 
     return (
-        <div className="w-11/12 m-auto pb-20 md:pb-40 pt-16 ">
+        <div className="w-11/12 m-auto pb-20 md:pb-24 pt-16 ">
             <div className="mt-10 md:mt-20">
                 <Slider {...settings}>
                     {data.map((d) => (

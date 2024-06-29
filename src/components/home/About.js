@@ -3,6 +3,23 @@ import ScrollToPorjectButton from "../../assets/buttons/ScrollToPorjectButton";
 
 const About = React.forwardRef((props, ref) => {
     const { sectionRefs } = props;
+    const skills = [
+        "HTML",
+        "CSS",
+        "PHP",
+        "SYMFONY",
+        "LARAVEL",
+        "JS",
+        "SQL",
+        "NOSQL",
+        "WORDPRESS",
+        "SEO",
+        "TERMINAL",
+        "REACTJS",
+        "TAILWIND",
+        "GIT",
+        "GITHUB",
+    ];
 
     return (
         <section
@@ -50,7 +67,7 @@ const About = React.forwardRef((props, ref) => {
                             Get to know me!
                         </h4>
                         <p
-                            className="text-1xl 3xl:text-2xl pb-5"
+                            className="text-1xl 3xl:text-2xl pb-5 text-justify"
                             style={{
                                 fontFamily: 'Comfortaa, sans-serif',
                                 maxWidth: '700px',
@@ -90,36 +107,21 @@ const About = React.forwardRef((props, ref) => {
                             My Skills
                         </h4>
                         <div className="rounded-lg w-full flex flex-wrap gap-4 justify-start align-super">
-                            {[
-                                "HTML",
-                                "CSS",
-                                "PHP",
-                                "SYMFONY",
-                                "LARAVEL",
-                                "JS",
-                                "SQL",
-                                "NOSQL",
-                                "WORDPRESS",
-                                "SEO",
-                                "TERMINAL",
-                                "REACTJS",
-                                "TAILWIND",
-                                "GIT",
-                                "GITHUB",
-                            ].map((skill, index) => (
+                            {skills.map((skill, index) => (
                                 <span
                                     key={index}
-                                    className="skill bg-gray-200 rounded-lg shadow-lg px-4 py-2 3xl:py-6 text-center overflow-hidden 3xl:text-2xl"
+                                    className="skill bg-gray-200 rounded-lg shadow-lg px-4 py-2 3xl:py-6 text-center overflow-hidden 3xl:text-2xl flex-grow justify-center"
                                     style={{
                                         fontFamily: 'Comfortaa, sans-serif',
                                         maxWidth: '700px',
-                                        whiteSpace: 'nowrap'
+                                        whiteSpace: 'nowrap',
                                     }}
                                 >
                                     {skill}
                                 </span>
                             ))}
                         </div>
+
                     </div>
                 </div>
             </div>

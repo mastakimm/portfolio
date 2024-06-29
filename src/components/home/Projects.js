@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectImage1 from '../../assets/sections/project_section_project_1.png';
-import YZ_main_screen from '../../assets/sections/smartmockups_yz.png';
+import YZ_main_screen from '../../assets/sections/smartmockups_lxohimdh.png';
 import BrainMaster_main_screen from '../../assets/sections/smartmockups_brainMaster.png'
 
 import Carousel from "./Carousel";
@@ -65,7 +65,7 @@ const Projects = React.forwardRef((props, ref) => {
                         className="text-2xl text-center sm:text-start md:text-start lg:text-start xl:text-start 2xl:text-start 3xl:text-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold mb-4">
                         YZ
                     </h3>
-                    <p className="text-xl sm:text-xl md:text-2xl lg:text-xl xl:text-lg 3xl:text-3xl py-4">
+                    <p className="text-xl sm:text-xl md:text-2xl lg:text-xl xl:text-lg 3xl:text-3xl py-4 text-justify">
                         YZ, a social network resembling Twitter, lets you share moments and engage with your community.
                         Stay informed and connected with YZ's user-friendly platform. Experience social networking at its best.
                     </p>
@@ -82,7 +82,7 @@ const Projects = React.forwardRef((props, ref) => {
                     <h3 className="text-2xl text-center sm:text-start md:text-start lg:text-start xl:text-start 2xl:text-start 3xl:text-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold mb-4">
                         BrainMaster
                     </h3>
-                    <p className="text-xl sm:text-2xl md:text-2xl lg:text-xl xl:text-lg 3xl:text-3xl py-4">
+                    <p className="text-xl sm:text-2xl md:text-2xl lg:text-xl xl:text-lg 3xl:text-3xl py-4 text-justify">
                         BrainMaster is an interactive website designed to enhance your knowledge through engaging quizzes.
                         Challenge yourself, learn new facts, and expand your cultural understanding with BrainMaster's diverse range of topics.
                     </p>
@@ -109,7 +109,7 @@ const Projects = React.forwardRef((props, ref) => {
                         className="text-2xl text-center sm:text-start md:text-start lg:text-start xl:text-start 2xl:text-start 3xl:text-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold mb-4">
                         PeerAssist
                     </h3>
-                    <p className="text-xl sm:text-2xl md:text-2xl lg:text-xl xl:text-lg 3xl:text-3xl py-4">
+                    <p className="text-xl sm:text-2xl md:text-2xl lg:text-xl xl:text-lg 3xl:text-3xl py-4 text-justify">
                         PeerAssist is designed to facilitate peer support among students. Take a ticket, receive help, and improve together.
                         Empowering students through collaborative assistance.
                     </p>
