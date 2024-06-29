@@ -108,19 +108,22 @@ const About = React.forwardRef((props, ref) => {
                         </h4>
                         <div className="rounded-lg w-full flex flex-wrap gap-4 justify-start align-super">
                             {skills.map((skill, index) => (
-                                <span
-                                    key={index}
-                                    className="skill bg-gray-200 rounded-lg shadow-lg px-4 py-2 3xl:py-6 text-center overflow-hidden 3xl:text-2xl flex-grow justify-center"
-                                    style={{
-                                        fontFamily: 'Comfortaa, sans-serif',
-                                        maxWidth: '700px',
-                                        whiteSpace: 'nowrap',
-                                    }}
-                                >
-                                    {skill}
-                                </span>
+                                <div key={index} className="skill-wrapper flex-grow">
+                                    <span
+                                        className="skill bg-gray-200 rounded-lg shadow-lg px-4 py-2 3xl:py-6 text-center overflow-hidden 3xl:text-2xl"
+                                        style={{
+                                            fontFamily: 'Comfortaa, sans-serif',
+                                            whiteSpace: 'nowrap',
+                                            display: 'inline-block',
+                                            width: '100%'
+                                        }}
+                                    >
+                                        {skill}
+                                    </span>
+                                </div>
                             ))}
                         </div>
+
 
                     </div>
                 </div>

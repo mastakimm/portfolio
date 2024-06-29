@@ -1,4 +1,4 @@
-import ProjectImage1 from '../../assets/sections/project_section_project_1.png';
+import ProjectImage1 from '../../assets/sections/boat-4395122_1280.jpg';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -40,7 +40,7 @@ const Carousel = () => {
                     {data.map((d) => (
                         <div key={d.id} className="min-h-[450px] xl:min-h-[500px] text-black rounded-xl flex flex-col">
                             <div className="h-50 md:h-56 3xl:h-80 rounded-t-xl flex justify-center items-center">
-                                <img src={d.projectHomeScreen} alt={d.projectTitle} className="h-full w-full object-contain" />
+                                <img src={d.projectHomeScreen} alt={d.projectTitle} className="h-full object-contain rounded" />
                             </div>
 
                             <div className="flex flex-col justify-center items-center gap-2 md:gap-4 p-2 md:p-8 flex-grow pb-8">

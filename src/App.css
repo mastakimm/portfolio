@@ -32,7 +32,14 @@
 }
 
 /*      Skills style       */
+.skill-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 700px;
+}
+
 .skill {
+    display: inline-block;
     position: relative;
     overflow: hidden;
 }

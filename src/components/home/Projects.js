@@ -1,6 +1,10 @@
 import React from 'react';
 import ProjectImage1 from '../../assets/sections/project_section_project_1.png';
+/*
 import YZ_main_screen from '../../assets/sections/smartmockups_lxohimdh.png';
+*/
+
+import YZ_main_screen from '../../assets/sections/boat-4395122_1280.jpg'
 import BrainMaster_main_screen from '../../assets/sections/smartmockups_brainMaster.png'
 
 import Carousel from "./Carousel";
@@ -92,7 +96,7 @@ const Projects = React.forwardRef((props, ref) => {
                     </div>
                 </div>
                 <img
-                    src={BrainMaster_main_screen}
+                    src={YZ_main_screen}
                     alt="ProjectDetails 1"
                     className="w-full md:w-3/4 lg:w-2/3  xl:w-6/12 2xl:w-5/12 3xl:w-5/12  rounded-lg"
                 />
@@ -100,7 +104,7 @@ const Projects = React.forwardRef((props, ref) => {
             <div
                 className="p-4 pt-4 md:p-12 lg:p-20 xl:p-24 3xl:p-24 rounded-lg flex flex-col xl:flex-row items-center space-y-4 md:space-y-4 xl:space-x-48 3xl:space-x-64">
                 <img
-                    src={ProjectImage1}
+                    src={YZ_main_screen}
                     alt="ProjectDetails 1"
                     className="w-full md:w-3/4 lg:w-2/3 xl:w-6/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
                 />
