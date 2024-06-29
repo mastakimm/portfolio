@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectImage1 from '../../assets/sections/project_section_project_1.png';
-import YZ_main_screen from '../../assets/sections/smartmockups_lxohimdh.png';
-import BrainMaster_main_screen from '../../assets/sections/smartmockups_brainMaster.png';
+import YZ_main_screen from '../../assets/sections/smartmockups_yz.png';
+import BrainMaster_main_screen from '../../assets/sections/smartmockups_brainMaster.png'
 
 import Carousel from "./Carousel";
 import CaseStudyButton from "../../assets/buttons/CaseStudyButton";
@@ -11,7 +11,7 @@ const project1 = {
     title: "YZ",
     description: "This page contains the case study of YZ ProjectDetails which includes the ProjectDetails Overview, Tools Used and Live Links to the official product.",
     backgroundImage: "../../assets/sections/home_section_background.jpg",
-    image: "../../assets/sections/smartmockups_lxohimdh.png",
+    image: "../../assets/sections/smartmockups_yz.png",
     overview: "This is a brief description of the project. This is a brief description of the project.",
     tools: ["HTML", "CSS", "PHP", "LARAVEL", "REACTJS", "SQL", "GIT", "GITHUB"],
     url: "https://yz-epitech.eu",
@@ -58,7 +58,7 @@ const Projects = React.forwardRef((props, ref) => {
                 <img
                     src={YZ_main_screen}
                     alt="YZ_main screen"
-                    className="w-full md:w-3/4 lg:w-2/3 xl:w-5/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
+                    className="w-full md:w-3/4 lg:w-3/4 xl:w-6/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
                 />
                 <div className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10">
                     <h3
@@ -94,7 +94,7 @@ const Projects = React.forwardRef((props, ref) => {
                 <img
                     src={BrainMaster_main_screen}
                     alt="ProjectDetails 1"
-                    className="w-full md:w-3/4 lg:w-2/3  xl:w-5/12 2xl:w-5/12 3xl:w-5/12  rounded-lg"
+                    className="w-full md:w-3/4 lg:w-2/3  xl:w-6/12 2xl:w-5/12 3xl:w-5/12  rounded-lg"
                 />
             </div>
             <div
@@ -102,7 +102,7 @@ const Projects = React.forwardRef((props, ref) => {
                 <img
                     src={ProjectImage1}
                     alt="ProjectDetails 1"
-                    className="w-full md:w-3/4 lg:w-2/3 xl:w-5/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
+                    className="w-full md:w-3/4 lg:w-2/3 xl:w-6/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
                 />
                 <div className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10">
                     <h3
