@@ -90,7 +90,7 @@ const Projects = React.forwardRef((props, ref) => {
                 className="bg-gray-100 p-4 pt-4 md:p-12 lg:p-20 xl:p-24 3xl:p-24 flex flex-col-reverse xl:flex-row items-center space-y-4 md:space-y-4 xl:space-x-48 3xl:space-x-64">
                 <div
                     className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10"
-                    data-aos="zoom-out-up"
+                    data-aos="zoom-up"
                 >
                     <h3 className="text-2xl text-center sm:text-start md:text-start lg:text-start xl:text-start 2xl:text-start 3xl:text-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold mb-4">
                         BrainMaster
