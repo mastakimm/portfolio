@@ -37,7 +37,7 @@ const Navbar = ({ sectionRefs }) => {
 
             if (section === 'contact') {
                 window.scrollTo({
-                    top: sectionRefs[section].current.offsetTop - 70,
+                    top: sectionRefs[section].current.offsetTop - 30,
                     behavior: 'smooth'
                 });
             } else {
@@ -87,7 +87,7 @@ const Navbar = ({ sectionRefs }) => {
 
     useEffect(() => {
         if (location.pathname === '/' && targetSection) {
-            setActiveSection(targetSection); // Mise à jour de la section active
+            setActiveSection(targetSection);
             setTimeout(() => {
                 scrollToSection(targetSection);
                 setTargetSection(null);
@@ -97,7 +97,7 @@ const Navbar = ({ sectionRefs }) => {
 
     useEffect(() => {
         if (location.pathname === '/') {
-            handleScroll(); // Mise à jour de la section active à la charge de la page
+            handleScroll();
         }
     }, [location.pathname]);
 
@@ -129,29 +129,38 @@ const Navbar = ({ sectionRefs }) => {
                         ))}
                     </div>
                     <div className="md:hidden flex items-center">
-                        <button className="outline-none mobile-menu-button" onClick={toggleMenu}>
+                        <button
+                            className={`menu ${isOpen ? 'opened' : ''}`}
+                            onClick={toggleMenu}
+                            aria-expanded={isOpen}
+                            aria-label="Main Menu"
+                        >
                             <svg
-                                className="w-6 h-6 text-gray-500 hover:text-blue-500 3xl:w-10 3xl:h-10"
+                                className="w-6 h-6 hover:text-blue-500 text-gray-500 3xl:w-10 3xl:h-10"
                                 fill="none"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                                 strokeWidth="2"
-                                viewBox="0 0 24 24"
+                                viewBox="0 0 100 100"
                                 stroke="currentColor"
                             >
-                                <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                                <path className="line line1"
+                                      d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"/>
+                                <path className="line line2" d="M 20,50 H 80"/>
+                                <path className="line line3"
+                                      d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"/>
                             </svg>
                         </button>
                     </div>
                 </div>
             </div>
-            <div className={`mobile-menu ${isOpen ? '' : 'hidden'} md:hidden`}>
+            <div className={`mobile-menu ${isOpen ? 'open' : 'hidden'} md:hidden`}>
                 {sections.map((section) => (
                     <Link
                         key={section}
                         to="/"
                         onClick={() => handleSectionClick(section)}
-                        className={`block py-2 px-4 text-sm 3xl:text-lg ${
+                        className={`block py-2 px-4 text-sm 3xl:text-lg text-center ${
                             activeSection === section ? 'bg-gray-200' : 'hover:bg-gray-200'
                         }`}
                     >

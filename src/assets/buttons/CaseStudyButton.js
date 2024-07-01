@@ -10,7 +10,7 @@ const CaseStudyButton = ({ buttonText, project }) => {
 
     return (
         <button
-            className="bg-button-red text-white font-bold py-4 px-12 xl:py-3 xl-px-10 rounded-lg transition duration-300 mt-4 border border-gray-800 shadow-lg hover:bg-purple-400 flex items-center justify-center 3xl:text-2xl"
+            className="shake bg-button-red text-white font-bold py-4 px-10 rounded-lg transition duration-300 mt-4 shadow-lg flex items-center justify-center 3xl:text-2xl 3xl:py-6 3xl:px-12 4xl:text-3xl 4xl:py-10 4xl:px-16 5xl:text-4xl 5xl:py-14 5xl:px-24"
             style={{
                 fontFamily: 'Comfortaa, sans-serif',
                 fontWeight: 'bold',

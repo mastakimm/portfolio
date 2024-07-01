@@ -1,4 +1,5 @@
 import React from 'react';
+import 'aos/dist/aos.css';
 import ScrollToPorjectButton from "../../assets/buttons/ScrollToPorjectButton";
 
 const About = React.forwardRef((props, ref) => {
@@ -19,6 +20,7 @@ const About = React.forwardRef((props, ref) => {
         "TAILWIND",
         "GIT",
         "GITHUB",
+        "SHELL"
     ];
 
     return (
@@ -26,13 +28,13 @@ const About = React.forwardRef((props, ref) => {
             id="about"
             ref={ref}
             className="bg-gray-100 min-h-screen flex flex-col items-center justify-start pt-16 pb-16 3xl:pt-48"
-            //gray-100
         >
             <div className="flex items-center justify-center w-full p-10">
                 <h4
+                    data-aos={"fade-up"}
                     className="text-center text-2xl 3xl:text-5xl sm:text-4xl md:text-3xl lg:text-3xl border-b-2 border-black"
                     style={{
-                        fontFamily: 'Comfortaa, sans-serif',
+                        fontFamily: 'Roboto, sans-serif',
                         maxWidth: '700px',
                         whiteSpace: 'pre-wrap'
                     }}
@@ -42,6 +44,7 @@ const About = React.forwardRef((props, ref) => {
             </div>
             <div className="flex items-center justify-center w-full pt-10 pb-32 p-8">
                 <h4
+                    data-aos={"fade-up"}
                     className="text-center text-2xl 3xl:text-4xl 3xl:tracking-wide"
                     style={{
                         fontFamily: 'Comfortaa, sans-serif',
@@ -55,7 +58,10 @@ const About = React.forwardRef((props, ref) => {
             </div>
             <div className="w-full flex flex-col lg:flex-row items-start justify-center">
                 <div className="p-10 w-full lg:w-1/2 flex flex-col items-center justify-start">
-                    <div className="lg:pl-16 w-full lg:w-10/12 flex flex-col">
+                    <div
+                        data-aos={"fade-up"}
+                        className="lg:pl-16 w-full lg:w-10/12 flex flex-col"
+                    >
                         <h4
                             className="text-left text-2xl 3xl:text-4xl font-bold mb-6 lg:mb-6 lg:self-start lg:mt-0"
                             style={{
@@ -81,8 +87,10 @@ const About = React.forwardRef((props, ref) => {
 
                             <br/><br/>
 
-                            Some Blablabla about me, like i love racquet sports and blablabla blabalablablabla blabalablablabla blabalablablabla blabalablablabla blabalablablabla blabala
-
+                            As someone deeply passionate about web technology, I find joy not only in coding but also in the everyday
+                            challenges that come with solving complex problems. Outside of work, I'm an avid enthusiast of racquet sports.
+                            My love for both technology and racquet sports stems from a deep-seated passion for continuous learning and improvement—whether
+                            it's optimizing a backend process or perfecting a backhand swing.
                             <br/><br/>
 
                             I'm open to <b className="italic">Job</b> opportunities where I can contribute, learn and grow. If you have a good
@@ -95,7 +103,10 @@ const About = React.forwardRef((props, ref) => {
                     </div>
                 </div>
                 <div className="p-10 w-full lg:w-1/2 flex flex-col items-start justify-start">
-                    <div className="lg:pl-16 w-full lg:w-10/12 flex flex-col">
+                    <div
+                        data-aos={"fade-up"}
+                        className="lg:pl-16 w-full lg:w-10/12 flex flex-col"
+                    >
                         <h4
                             className="text-left text-2xl 3xl:text-4xl font-bold mb-6 lg:mb-6 lg:self-start lg:mt-0"
                             style={{

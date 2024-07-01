@@ -49,8 +49,9 @@ const Projects = React.forwardRef((props, ref) => {
         <section id="projects" ref={ref} className="min-h-screen flex flex-col items-center justify-center">
             <h4
                 className="text-center text-2xl 3xl:text-5xl sm:text-4xl md:text-3xl lg:text-3xl font-bold pt-20 border-b-2 border-black"
+                data-aos="zoom-out-up"
                 style={{
-                    fontFamily: 'Comfortaa, sans-serif',
+                    fontFamily: 'Roboto, sans-serif',
                     maxWidth: '700px',
                     whiteSpace: 'pre-wrap',
                 }}
@@ -58,20 +59,25 @@ const Projects = React.forwardRef((props, ref) => {
                 PROJECTS
             </h4>
             <div
-                className="p-4 pt-24 md:p-12 lg:p-20 xl:p-24 3xl:p-24 rounded-lg flex flex-col xl:flex-row items-center space-y-4 md:space-y-4 xl:space-x-48 3xl:space-x-64">
+                className="p-4 pt-24 md:p-12 lg:p-20 xl:p-24 3xl:p-24 flex flex-col xl:flex-row items-center space-y-4 md:space-y-4 xl:space-x-48 3xl:space-x-64">
                 <img
                     src={YZ_main_screen}
                     alt="YZ_main screen"
-                    className="w-full md:w-3/4 lg:w-3/4 xl:w-6/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
+                    data-aos="zoom-in-up"
+                    className="customShadow w-full md:w-3/4 lg:w-3/4 xl:w-6/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
                 />
-                <div className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10">
+                <div
+                    className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10"
+                    data-aos="fade-up"
+                >
                     <h3
                         className="text-2xl text-center sm:text-start md:text-start lg:text-start xl:text-start 2xl:text-start 3xl:text-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold mb-4">
                         YZ
                     </h3>
                     <p className="text-xl sm:text-xl md:text-2xl lg:text-xl xl:text-lg 3xl:text-3xl py-4 text-justify">
                         YZ, a social network resembling Twitter, lets you share moments and engage with your community.
-                        Stay informed and connected with YZ's user-friendly platform. Experience social networking at its best.
+                        Stay informed and connected with YZ's user-friendly platform. Experience social networking at
+                        its best.
                     </p>
                     <div
                         className="flex justify-center items-center sm:block md:block lg:block xl:block 2xl:block 3xl:block">
@@ -81,14 +87,19 @@ const Projects = React.forwardRef((props, ref) => {
             </div>
 
             <div
-                className="p-4 pt-4 md:p-12 lg:p-20 xl:p-24 3xl:p-24 rounded-lg flex flex-col-reverse xl:flex-row items-center space-y-4 md:space-y-4 xl:space-x-48 3xl:space-x-64">
-                <div className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10">
+                className="bg-gray-100 p-4 pt-4 md:p-12 lg:p-20 xl:p-24 3xl:p-24 flex flex-col-reverse xl:flex-row items-center space-y-4 md:space-y-4 xl:space-x-48 3xl:space-x-64">
+                <div
+                    className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10"
+                    data-aos="zoom-out-up"
+                >
                     <h3 className="text-2xl text-center sm:text-start md:text-start lg:text-start xl:text-start 2xl:text-start 3xl:text-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold mb-4">
                         BrainMaster
                     </h3>
                     <p className="text-xl sm:text-2xl md:text-2xl lg:text-xl xl:text-lg 3xl:text-3xl py-4 text-justify">
-                        BrainMaster is an interactive website designed to enhance your knowledge through engaging quizzes.
-                        Challenge yourself, learn new facts, and expand your cultural understanding with BrainMaster's diverse range of topics.
+                        BrainMaster is an interactive website designed to enhance your knowledge through engaging
+                        quizzes.
+                        Challenge yourself, learn new facts, and expand your cultural understanding with BrainMaster's
+                        diverse range of topics.
                     </p>
                     <div
                         className="flex justify-center items-center sm:block md:block lg:block xl:block 2xl:block 3xl:block">
@@ -98,23 +109,29 @@ const Projects = React.forwardRef((props, ref) => {
                 <img
                     src={YZ_main_screen}
                     alt="ProjectDetails 1"
-                    className="w-full md:w-3/4 lg:w-2/3  xl:w-6/12 2xl:w-5/12 3xl:w-5/12  rounded-lg"
+                    data-aos="fade-up"
+                    className="customShadow w-full md:w-3/4 lg:w-2/3  xl:w-6/12 2xl:w-5/12 3xl:w-5/12  rounded-lg"
                 />
             </div>
             <div
-                className="p-4 pt-4 md:p-12 lg:p-20 xl:p-24 3xl:p-24 rounded-lg flex flex-col xl:flex-row items-center space-y-4 md:space-y-4 xl:space-x-48 3xl:space-x-64">
+                className="bg-gray-200 p-4 pt-4 md:p-12 lg:p-20 xl:p-24 3xl:p-24 flex flex-col xl:flex-row items-center space-y-4 md:space-y-4 xl:space-x-48 3xl:space-x-64">
                 <img
                     src={YZ_main_screen}
                     alt="ProjectDetails 1"
-                    className="w-full md:w-3/4 lg:w-2/3 xl:w-6/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
+                    data-aos="zoom-in-up"
+                    className="customShadow w-full md:w-3/4 lg:w-2/3 xl:w-6/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
                 />
-                <div className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10">
+                <div
+                    className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10"
+                    data-aos="fade-up"
+                >
                     <h3
                         className="text-2xl text-center sm:text-start md:text-start lg:text-start xl:text-start 2xl:text-start 3xl:text-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold mb-4">
                         PeerAssist
                     </h3>
                     <p className="text-xl sm:text-2xl md:text-2xl lg:text-xl xl:text-lg 3xl:text-3xl py-4 text-justify">
-                        PeerAssist is designed to facilitate peer support among students. Take a ticket, receive help, and improve together.
+                        PeerAssist is designed to facilitate peer support among students. Take a ticket, receive help,
+                        and improve together.
                         Empowering students through collaborative assistance.
                     </p>
                     <div
@@ -124,15 +141,16 @@ const Projects = React.forwardRef((props, ref) => {
                 </div>
             </div>
             <h4
-                className="text-center text-3xl font-bold italic border-b-2 border-black pt-20"
+                className="text-center text-4xl font-bold italic border-b-2 border-black pt-20"
                 style={{
-                    fontFamily: 'Comfortaa, sans-serif',
+                    fontFamily: 'Roboto, sans-serif',
                     maxWidth: '700px',
                     whiteSpace: 'pre-wrap',
                 }}
             >
                 Additional Projects
             </h4>
+
 
             <Carousel/>
         </section>

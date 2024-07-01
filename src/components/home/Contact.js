@@ -35,7 +35,7 @@ const Contact = React.forwardRef((props, ref) => {
                 <p
 
                     className="text-center text-2xl 2xl:text-3xl 3xl:text-4xl font-bold pb-10"
-                    style={{ fontFamily: 'Comfortaa, sans-serif' }}
+                    style={{ fontFamily: 'Roboto, sans-serif' }}
                 >
                     Feel free to Contact me by submitting the form below and I will get back to you as soon as possible
                 </p>

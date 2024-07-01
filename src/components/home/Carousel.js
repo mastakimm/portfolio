@@ -2,6 +2,7 @@ import ProjectImage1 from '../../assets/sections/boat-4395122_1280.jpg';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import React from "react";
 const Carousel = () => {
     const settings = {
         dots: true,
@@ -34,16 +35,18 @@ const Carousel = () => {
     };
 
     return (
-        <div className="w-11/12 m-auto pb-20 md:pb-24 pt-16 ">
+        <div className="w-11/12 m-auto pb-32 md:pb-24 pt-16">
             <div className="mt-10 md:mt-20">
                 <Slider {...settings}>
                     {data.map((d) => (
                         <div key={d.id} className="min-h-[450px] xl:min-h-[500px] text-black rounded-xl flex flex-col">
-                            <div className="h-50 md:h-56 3xl:h-80 rounded-t-xl flex justify-center items-center">
-                                <img src={d.projectHomeScreen} alt={d.projectTitle} className="h-full object-contain rounded" />
+                            <div className="h-72 md:h-64 3xl:h-80 rounded-t-xl flex justify-center items-center">
+                                <img src={d.projectHomeScreen} alt={d.projectTitle}
+                                     className="h-full w-10/12 object-contain rounded"/>
                             </div>
 
-                            <div className="flex flex-col justify-center items-center gap-2 md:gap-4 p-2 md:p-8 flex-grow pb-8">
+                            <div
+                                className="flex flex-col justify-center items-center gap-2 md:gap-4 p-2 md:p-8 flex-grow pb-8">
                                 <p className="text-xl sm:text-3xl md:text-xl 3xl:text-3xl font-semibold py-6">{d.projectTitle}</p>
                                 <p className="pb-2 md:pb-3 text-lg sm:text-xl md:text-base 3xl:text-2xl text-center">{d.projectDescription}</p>
                                 <button
