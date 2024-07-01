@@ -63,7 +63,7 @@ const Projects = React.forwardRef((props, ref) => {
                 <img
                     src={YZ_main_screen}
                     alt="YZ_main screen"
-                    data-aos="zoom-in-up"
+                    data-aos="zoom-up"
                     className="customShadow w-full md:w-3/4 lg:w-3/4 xl:w-6/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
                 />
                 <div
