@@ -63,12 +63,12 @@ const Projects = React.forwardRef((props, ref) => {
                 <img
                     src={YZ_main_screen}
                     alt="YZ_main screen"
-                    data-aos="zoom-up"
+                    data-aos="zoom-in-up"
                     className="customShadow w-full md:w-3/4 lg:w-3/4 xl:w-6/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
                 />
                 <div
                     className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10"
-                    data-aos="fade-up"
+                    data-aos="fade-in-up"
                 >
                     <h3
                         className="text-2xl text-center sm:text-start md:text-start lg:text-start xl:text-start 2xl:text-start 3xl:text-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold mb-4">
@@ -109,7 +109,7 @@ const Projects = React.forwardRef((props, ref) => {
                 <img
                     src={YZ_main_screen}
                     alt="ProjectDetails 1"
-                    data-aos="fade-up"
+                    data-aos="zoom-in-up"
                     className="customShadow w-full md:w-3/4 lg:w-2/3  xl:w-6/12 2xl:w-5/12 3xl:w-5/12  rounded-lg"
                 />
             </div>
@@ -123,7 +123,6 @@ const Projects = React.forwardRef((props, ref) => {
                 />
                 <div
                     className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10"
-                    data-aos="fade-up"
                 >
                     <h3
                         className="text-2xl text-center sm:text-start md:text-start lg:text-start xl:text-start 2xl:text-start 3xl:text-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold mb-4">
