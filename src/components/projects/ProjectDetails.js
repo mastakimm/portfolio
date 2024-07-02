@@ -7,6 +7,8 @@ const ProjectDetails = () => {
     const location = useLocation();
     const { project } = location.state || {};
 
+    const buttonText = project.liveUrl.includes("github") ? "Github" : "Live";
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -40,30 +42,41 @@ const ProjectDetails = () => {
                     </h1>
                 </div>
                 <div className="flex justify-center items-center">
-                    <SendToProjectUrl url={project.url} />
+                    <button
+                        className="shake bg-button-red text-white font-bold py-4 px-24 rounded-lg transition duration-300 mt-4 shadow-lg flex items-center justify-center 3xl:text-2xl 3xl:py-6 3xl:px-40"
+                        style={{
+                            fontFamily: 'Comfortaa, sans-serif',
+                            fontWeight: 'bold',
+                            letterSpacing: '0.05em',
+                            width: '310px'
+                        }}
+                        onClick={() => window.location.href = project.liveUrl}
+                    >
+                        Project Link
+                    </button>
                 </div>
             </section>
             <section className="min-h-screen py-16 3xl:py-48 flex flex-col items-center">
-                <div className="flex flex-col justify-center items-center w-full pt-24 h-[650px]">
+                <div className="flex flex-col justify-center items-center w-full pt-24">
                     <img
                         src={project.image}
                         alt={project.title}
                         className="w-full md:w-8/12 lg:w-9/12 xl:w-6/12 3xl:w-1/2 rounded-lg"
                     />
                 </div>
-                <div className="w-3/4 pt-28 md:px-12 lg:px-20 xl:px-24 3xl:px-24 rounded-lg flex flex-col space-y-4 md:space-y-4 xl:space-y-6 3xl:space-y-8">
-                    <h3 className="text-2xl justify-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold py-4">
+                <div className="w-3/4 pt-28 md:px-12 lg:px-20 xl:px-24 3xl:px-24 rounded-lg flex flex-col">
+                    <h3 className="text-2xl justify-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold">
                         Project Overview
                     </h3>
                     <p className="text-xl sm:text-xl md:text-2xl lg:text-xl xl:text-xl 3xl:text-3xl py-4 justify-start">
                         {project.overview}
                     </p>
                     <div className="w-full lg:w-10/12 flex flex-col py-20">
-                        <h4 className="text-left text-3xl 3xl:text-4xl font-bold mb-6 lg:mb-6 lg:self-start lg:mt-0">
+                        <h3 className="text-2xl justify-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold py-4">
                             Tools Used
-                        </h4>
+                        </h3>
                         <div className="rounded-lg w-full flex flex-wrap gap-4 justify-start">
-                            {project.tools.map((tool, index) => (
+                        {project.tools.map((tool, index) => (
                                 <span
                                     key={index}
                                     className="skill bg-gray-200 rounded-lg shadow-lg px-4 py-3 xl-px-6 xl:py-3 3xl:py-6 text-center overflow-hidden 3xl:text-2xl"
@@ -105,7 +118,7 @@ const ProjectDetails = () => {
                         }}
                         onClick={() => window.location.href = project.liveUrl}
                     >
-                        Live
+                        {buttonText}
                     </button>
                 </div>
             </section>

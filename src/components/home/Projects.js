@@ -1,11 +1,6 @@
 import React from 'react';
-import ProjectImage1 from '../../assets/sections/project_section_project_1.png';
-/*
-import YZ_main_screen from '../../assets/sections/smartmockups_lxohimdh.png';
-*/
-
-import YZ_main_screen from '../../assets/sections/boat-4395122_1280.jpg'
-import BrainMaster_main_screen from '../../assets/sections/smartmockups_brainMaster.png'
+import YZ_main_screen from '../../assets/sections/YZ_HomePage.png';
+import BrainMaster_main_screen from '../../assets/sections/BrainMaster_MainPage.png'
 
 import Carousel from "./Carousel";
 import CaseStudyButton from "../../assets/buttons/CaseStudyButton";
@@ -15,8 +10,11 @@ const project1 = {
     title: "YZ",
     description: "This page contains the case study of YZ ProjectDetails which includes the ProjectDetails Overview, Tools Used and Live Links to the official product.",
     backgroundImage: "../../assets/sections/home_section_background.jpg",
-    image: "../../assets/sections/smartmockups_yz.png",
-    overview: "This is a brief description of the project. This is a brief description of the project.",
+    image: "../../assets/sections/smartmockups_YZ.png",
+    overview: "YZ is a dynamic platform where you can share ideas, follow interests, and engage in real-time conversations," +
+        " keeping you informed and connected. Express yourself freely through posts, photos, videos," +
+        " and reactions, and customize your feed by following accounts and hashtags that interest you. Stay updated with instant notifications about interactions," +
+        " new followers, and trending topics.",
     tools: ["HTML", "CSS", "PHP", "LARAVEL", "REACTJS", "SQL", "GIT", "GITHUB"],
     url: "https://yz-epitech.eu",
     liveUrl: "https://yz-epitech.eu"
@@ -27,7 +25,10 @@ const project2 = {
     description: "This page contains the case study of BrainMaster ProjectDetails which includes the ProjectDetails Overview, Tools Used and Live Links to the official product.",
     backgroundImage: "../../assets/sections/home_section_background.jpg",
     image: "../../assets/sections/smartmockups_brainMaster.png",
-    overview: "This is a brief description of the project. This is a brief description of the project.",
+    overview:
+        "BrainMaster is a platform that offers engaging quizzes across various categories like science, history, and pop culture, allowing users to test and expand their knowledge." +
+        " It provides instant results and detailed feedback to help users track their progress and improve." +
+        " Additionally, BrainMaster includes an admin panel for educators and content creators to analyze quiz performance and user engagement.",
     tools: ["HTML", "CSS", "PHP", "SYMFONY", "SQL", "GIT", "GITHUB"],
     url: "https://github.com/mastakimm/BrainMaster/tree/master",
     liveUrl: "https://github.com/mastakimm/BrainMaster/tree/master"
@@ -48,7 +49,7 @@ const Projects = React.forwardRef((props, ref) => {
     return (
         <section id="projects" ref={ref} className="min-h-screen flex flex-col items-center justify-center">
             <h4
-                className="text-center text-2xl 3xl:text-5xl sm:text-4xl md:text-3xl lg:text-3xl font-bold pt-20 border-b-2 border-black"
+                className="pb-16 text-center text-2xl 3xl:text-6xl sm:text-4xl md:text-4xl lg:text-5xl font-bold pt-20"
                 data-aos="fade-in"
                 style={{
                     fontFamily: 'Roboto, sans-serif',
@@ -107,10 +108,11 @@ const Projects = React.forwardRef((props, ref) => {
                     </div>
                 </div>
                 <img
-                    src={YZ_main_screen}
+                    src={BrainMaster_main_screen}
                     alt="ProjectDetails 1"
                     data-aos="zoom-in-up"
-                    className="customShadow w-full md:w-3/4 lg:w-2/3  xl:w-6/12 2xl:w-5/12 3xl:w-5/12  rounded-lg"
+                    className="customShadow w-full md:w-3/4 lg:w-3/4 xl:w-6/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
+
                 />
             </div>
             <div
@@ -119,7 +121,7 @@ const Projects = React.forwardRef((props, ref) => {
                     src={YZ_main_screen}
                     alt="ProjectDetails 1"
                     data-aos="zoom-in-up"
-                    className="customShadow w-full md:w-3/4 lg:w-2/3 xl:w-6/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
+                    className="customShadow w-full md:w-3/4 lg:w-3/4 xl:w-6/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
                 />
                 <div
                     className="md:w-9/12 text-gray-800 p-4 xxl:px-16 xl:pr-12 py-10"

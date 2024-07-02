@@ -1,4 +1,6 @@
 import ProjectImage1 from '../../assets/sections/boat-4395122_1280.jpg';
+import ConnectFour from '../../assets/sections/Connect4_MaintScreen.png';
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -73,11 +75,10 @@ const Carousel = () => {
 
 const data = [
     {
-        projectTitle: `Project Title`,
-        projectHomeScreen: ProjectImage1,
-        projectDescription: `This is a brief description of the project. This is a brief description of the project. This is
-            a brief description of the project. This is a brief description of the project. This is a brief
-            description of the project.`
+        projectTitle: `ConnectFour`,
+        projectHomeScreen: ConnectFour,
+        projectDescription: `Connect4 is a classic two-player connection game where players take turns dropping colored discs into a vertical grid.
+        The objective is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs.`
     },
     {
         projectTitle: `Project Title`,

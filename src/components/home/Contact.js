@@ -24,7 +24,7 @@ const Contact = React.forwardRef((props, ref) => {
         <section
             id="contact"
             ref={ref}
-            className="min-h-screen flex items-center py-20 flex-col"
+            className="sm:h-full flex items-center py-20 flex-col"
             style={{
                 backgroundImage: `url(${contactSectionBackgroundImage})`,
                 backgroundSize: "cover",

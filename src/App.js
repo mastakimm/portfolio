@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import Home from "./components/home/Home";
 import About from "./components/home/About";
@@ -11,7 +11,8 @@ import ProjectDetails from "./components/projects/ProjectDetails";
 import LoadingScreen from "./components/loading/LoadingScreen";
 
 function App() {
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(true);  // Initialize to true
+    const location = useLocation();
     const homeRef = useRef(null);
     const aboutRef = useRef(null);
     const projectsRef = useRef(null);
@@ -25,31 +26,45 @@ function App() {
     };
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 1000);
+        const handleLoading = () => {
+            setIsLoading(true);
+            const timer = setTimeout(() => {
+                setIsLoading(false);
+            }, 1000);
+            return () => clearTimeout(timer);
+        };
 
-        return () => clearTimeout(timer);
-    }, []);
+        handleLoading();
+    }, [location.pathname]);
 
     return (
-        <Router>
+        <div>
             {isLoading && <LoadingScreen />}
             <Navbar sectionRefs={sectionRefs} />
-            <Routes>
-                <Route path="/" element={
-                    <>
-                        <Home ref={homeRef} sectionRefs={sectionRefs} />
-                        <About ref={aboutRef} sectionRefs={sectionRefs} />
-                        <Projects ref={projectsRef} sectionRefs={sectionRefs} />
-                        <Contact ref={contactRef} sectionRefs={sectionRefs} />
-                        <Footer />
-                    </>
-                } />
-                <Route path="/case-study" element={<ProjectDetails />}/>
-            </Routes>
+            {!isLoading && (
+                <Routes>
+                    <Route path="/" element={
+                        <>
+                            <Home ref={homeRef} sectionRefs={sectionRefs} />
+                            <About ref={aboutRef} sectionRefs={sectionRefs} />
+                            <Projects ref={projectsRef} sectionRefs={sectionRefs} />
+                            <Contact ref={contactRef} sectionRefs={sectionRefs} />
+                            <Footer />
+                        </>
+                    } />
+                    <Route path="/case-study" element={<ProjectDetails />} />
+                </Routes>
+            )}
+        </div>
+    );
+}
+
+function AppWrapper() {
+    return (
+        <Router>
+            <App />
         </Router>
     );
 }
 
-export default App;
+export default AppWrapper;

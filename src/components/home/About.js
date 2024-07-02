@@ -32,7 +32,7 @@ const About = React.forwardRef((props, ref) => {
             <div className="flex items-center justify-center w-full p-10">
                 <h4
                     data-aos={"fade-up"}
-                    className="text-center text-2xl 3xl:text-5xl sm:text-4xl md:text-3xl lg:text-3xl border-b-2 border-black"
+                    className="text-center text-2xl 3xl:text-6xl sm:text-4xl md:text-4xl lg:text-5xl"
                     style={{
                         fontFamily: 'Roboto, sans-serif',
                         maxWidth: '700px',

@@ -109,7 +109,7 @@ const Navbar = ({ sectionRefs }) => {
                         <Link
                             to="/"
                             onClick={() => handleSectionClick('home')}
-                            className="flex items-center py-4 px-2 font-bold"
+                            className="flex items-center py-4 px-2 font-bold 3xl:text-xl"
                         >
                             ANTOINE FAWER
                         </Link>
