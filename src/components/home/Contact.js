@@ -31,17 +31,20 @@ const Contact = React.forwardRef((props, ref) => {
                 backgroundPosition: 'center'
             }}
         >
-            <div className="flex flex-col w-full max-w-2xl 3xl:pb-20">
+            <div className="flex flex-col w-full max-w-2xl 3xl:pb-20 pb-10">
                 <p
-
-                    className="text-center text-2xl 2xl:text-3xl 3xl:text-4xl font-bold pb-10"
+                    data-aos="zoom-in-up"
+                    className="text-center text-2xl 2xl:text-3xl 3xl:text-4xl font-bold"
                     style={{ fontFamily: 'Roboto, sans-serif' }}
                 >
                     Feel free to Contact me by submitting the form below and I will get back to you as soon as possible
                 </p>
             </div>
 
-            <div className="flex flex-col w-full max-w-2xl 3xl:max-w-5xl 3xl:h-6/6">
+            <div
+                className="flex flex-col w-full max-w-2xl 3xl:max-w-5xl 3xl:h-6/6"
+                data-aos="zoom-in-up"
+            >
                 <div
                     className="bg-gray-100 shadow-2xl p-10 rounded-lg w-full min-w-full max-w-2xl border-4 border-gray-100">
                     <form ref={form} onSubmit={sendEmail} className="flex flex-col space-y-4 3xl:space-y-10">

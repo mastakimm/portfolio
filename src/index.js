@@ -20,7 +20,7 @@ import reportWebVitals from './reportWebVitals';
 
 
         // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 20, // offset (in px) from the original trigger point
+        offset: 60, // offset (in px) from the original trigger point
         delay: 200, // values from 0 to 3000, with step 50ms
         duration: 1000, // values from 0 to 3000, with step 50ms
         easing: 'linear', // default easing for AOS animations

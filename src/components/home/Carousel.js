@@ -35,10 +35,10 @@ const Carousel = () => {
     };
 
     return (
-        <div className="w-11/12 m-auto pb-32 md:pb-24 pt-16">
+        <div className="w-11/12 m-auto pb-32 md:pb-24">
             <div
-                className=" mt-10 md:mt-20"
-                data-aos="fade-up"
+                className="mt-10 md:mt-20"
+                data-aos="fade-out"
             >
                 <Slider {...settings}>
                     {data.map((d) => (

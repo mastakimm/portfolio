@@ -49,7 +49,7 @@ const Projects = React.forwardRef((props, ref) => {
         <section id="projects" ref={ref} className="min-h-screen flex flex-col items-center justify-center">
             <h4
                 className="text-center text-2xl 3xl:text-5xl sm:text-4xl md:text-3xl lg:text-3xl font-bold pt-20 border-b-2 border-black"
-                data-aos="zoom-out-up"
+                data-aos="fade-in"
                 style={{
                     fontFamily: 'Roboto, sans-serif',
                     maxWidth: '700px',

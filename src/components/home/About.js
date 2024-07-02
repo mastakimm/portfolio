@@ -65,7 +65,7 @@ const About = React.forwardRef((props, ref) => {
                         <h4
                             className="text-left text-2xl 3xl:text-4xl font-bold mb-6 lg:mb-6 lg:self-start lg:mt-0"
                             style={{
-                                fontFamily: 'Comfortaa, sans-serif',
+                                fontFamily: 'Roboto, sans-serif',
                                 maxWidth: '700px',
                                 whiteSpace: 'pre-wrap',
                             }}
@@ -89,8 +89,7 @@ const About = React.forwardRef((props, ref) => {
 
                             As someone deeply passionate about web technology, I find joy not only in coding but also in the everyday
                             challenges that come with solving complex problems. Outside of work, I'm an avid enthusiast of racquet sports.
-                            My love for both technology and racquet sports stems from a deep-seated passion for continuous learning and improvement—whether
-                            it's optimizing a backend process or perfecting a backhand swing.
+                            I'm in continuous learning and improvement—whether it's optimizing a backend process or perfecting a backhand swing.
                             <br/><br/>
 
                             I'm open to <b className="italic">Job</b> opportunities where I can contribute, learn and grow. If you have a good
@@ -110,7 +109,7 @@ const About = React.forwardRef((props, ref) => {
                         <h4
                             className="text-left text-2xl 3xl:text-4xl font-bold mb-6 lg:mb-6 lg:self-start lg:mt-0"
                             style={{
-                                fontFamily: 'Comfortaa, sans-serif',
+                                fontFamily: 'Roboto, sans-serif',
                                 maxWidth: '700px',
                                 whiteSpace: 'pre-wrap',
                             }}
