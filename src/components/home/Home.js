@@ -26,10 +26,10 @@ const Home = React.forwardRef((props, ref) => {
                     HEY THERE, I'M
                 </h1>
                 <h1
-                    className="text-center text-6xl 3xl:text-7xl 4xl:text-8xl 4xl:tracking-widest 5xl:text-9xl 5xl:tracking-widest font-bold pt-4"
+                    className="text-center text-6xl 3xl:text-7xl 4xl:text-8xl 4xl:tracking-widest 5xl:text-9xl 5xl:tracking-widest font-bold pt-2"
                     style={{fontFamily: 'Roboto, sans-serif'}}
                 >
-                    ANTOINE FAWER,
+                    ANTOINE FAWER
                 </h1>
                 {/*<h1
                     className="text-center text-6xl 3xl:text-7xl 4xl:text-8xl 4xl:tracking-widest 5xl:text-9xl 5xl:tracking-widest font-bold"
