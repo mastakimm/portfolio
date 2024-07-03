@@ -6,7 +6,7 @@ import Carousel from "./Carousel";
 import CaseStudyButton from "../../assets/buttons/CaseStudyButton";
 
 
-const project1 = {
+const YZ = {
     title: "YZ",
     description: "This page contains the case study of YZ ProjectDetails which includes the ProjectDetails Overview, Tools Used and Live Links to the official product.",
     backgroundImage: "../../assets/sections/home_section_background.jpg",
@@ -20,7 +20,7 @@ const project1 = {
     liveUrl: "https://yz-epitech.eu"
 };
 
-const project2 = {
+const BrainMaster = {
     title: "BrainMaster",
     description: "This page contains the case study of BrainMaster ProjectDetails which includes the ProjectDetails Overview, Tools Used and Live Links to the official product.",
     backgroundImage: "../../assets/sections/home_section_background.jpg",
@@ -34,7 +34,7 @@ const project2 = {
     liveUrl: "https://github.com/mastakimm/BrainMaster/tree/master"
 };
 
-const project3 = {
+const PeerAssist = {
     title: "PeerAssist",
     description: "This page contains the case study of PeerAssist ProjectDetails which includes the ProjectDetails Overview, Tools Used and Live Links to the official product.",
     backgroundImage: "../../assets/sections/home_section_background.jpg",
@@ -82,7 +82,7 @@ const Projects = React.forwardRef((props, ref) => {
                     </p>
                     <div
                         className="flex justify-center items-center sm:block md:block lg:block xl:block 2xl:block 3xl:block">
-                        <CaseStudyButton buttonText={"Case Study"} project={project1}/>
+                        <CaseStudyButton buttonText={"Case Study"} project={YZ}/>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@ const Projects = React.forwardRef((props, ref) => {
                     </p>
                     <div
                         className="flex justify-center items-center sm:block md:block lg:block xl:block 2xl:block 3xl:block">
-                        <CaseStudyButton buttonText={"Case Study"} project={project2}/>
+                        <CaseStudyButton buttonText={"Case Study"} project={BrainMaster}/>
                     </div>
                 </div>
                 <img
@@ -138,7 +138,7 @@ const Projects = React.forwardRef((props, ref) => {
                     </p>
                     <div
                         className="flex justify-center items-center sm:block md:block lg:block xl:block 2xl:block 3xl:block">
-                        <CaseStudyButton buttonText={"Case Study"} project={project3}/>
+                        <CaseStudyButton buttonText={"Case Study"} project={PeerAssist}/>
                     </div>
                 </div>
             </div>

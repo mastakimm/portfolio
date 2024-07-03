@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import { useLocation } from 'react-router-dom';
-import SendToProjectUrl from "../../assets/buttons/SendToProjectUrl";
 import Footer from "../Footer";
 
 const ProjectDetails = () => {
@@ -68,12 +67,12 @@ const ProjectDetails = () => {
                     <h3 className="text-2xl justify-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold">
                         Project Overview
                     </h3>
-                    <p className="text-xl sm:text-xl md:text-2xl lg:text-xl xl:text-xl 3xl:text-3xl py-4 justify-start">
-                        {project.overview}
+                    <p className="text-xl sm:text-xl md:text-2xl lg:text-xl xl:text-xl 3xl:text-3xl py-4 justify-start"
+                       dangerouslySetInnerHTML={{__html: project.overview}}>
                     </p>
                     <div className="w-full lg:w-10/12 flex flex-col py-20">
                         <h3 className="text-2xl justify-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold py-4">
-                            Tools Used
+                        Tools Used
                         </h3>
                         <div className="rounded-lg w-full flex flex-wrap gap-4 justify-start">
                         {project.tools.map((tool, index) => (
