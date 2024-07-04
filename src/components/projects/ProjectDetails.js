@@ -114,7 +114,7 @@ const ProjectDetails = () => {
                                 letterSpacing: '0.05em',
                                 width: '120px'
                             }}
-                            onClick={() => window.location.href = project.githubUrl}
+                            onClick={() => window.open(project.githubUrl)}
                         >
                             GitHub
                         </button>
@@ -128,7 +128,7 @@ const ProjectDetails = () => {
                                 letterSpacing: '0.05em',
                                 width: '120px'
                             }}
-                            onClick={() => window.location.href = project.liveUrl}
+                            onClick={() => window.open(project.liveUrl)}
                         >
                             Live
                         </button>
