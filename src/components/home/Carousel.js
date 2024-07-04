@@ -4,28 +4,28 @@ import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import CaseStudyButton from "../../assets/buttons/CaseStudyButton";
 
-import Battleship from '../../assets/sections/battleship_BoardScreen.png';
-import ConnectFour from '../../assets/sections/ConnectFour_MainScreen.png';
-import CssGenerator from '../../assets/sections/css_generator_HomePage.png';
+import Battleship from '../../assets/sections/projects/battleship_BoardScreen.png';
+import ConnectFour from '../../assets/sections/projects/ConnectFour_MainScreen.png';
+import CssGenerator from '../../assets/sections/projects/css_generator_HomePage.png';
 
 const ConnectFourData = {
     title: "ConnectFour",
     description: "This page contains the case study of ConnectFour ProjectDetails which includes the ProjectDetails Overview, Tools Used and Live Links to the official product.",
-    backgroundImage: "../../assets/sections/home_section_background.jpg",
-    image: "../../assets/sections/ConnectFour_MainScreen.png",
+    backgroundImage: "../../assets/sections/home_section_background_rotated.jpg",
+    image: "../../assets/sections/projects/ConnectFour_MainScreen.png",
     overview: "Connect4 is a classic two-player connection game where players take turns dropping colored discs into a vertical grid." +
         " The objective is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs." +
         " This project is a digital implementation of the game, developed with a user-friendly interface and robust game logic.",
     tools: ["HTML", "CSS", "JS", "GIT", "GITHUB"],
     url: "https://github.com/mastakimm/connect4/",
-    liveUrl: "https://github.com/mastakimm/connect4/"
+    githubUrl: "https://github.com/mastakimm/connect4/"
 };
 
 const battleshipData = {
     title: "Battleship",
     description: "This page contains the case study of ConnectFour ProjectDetails which includes the ProjectDetails Overview, Tools Used and Live Links to the official product.",
-    backgroundImage: "../../assets/sections/home_section_background.jpg",
-    image: "../../assets/sections/battleship_BoardScreen.png",
+    backgroundImage: "../../assets/sections/home_section_background_rotated.jpg",
+    image: "../../assets/sections/projects/battleship_BoardScreen.png",
     overview: "Battleship is a classic two-player game where players take turns guessing the locations of the opponent's ships on a grid. " +
         "The objective is to sink all of the opponent's ships by correctly guessing their locations. " +
         "This project is a digital implementation of the game, featuring a user-friendly interface and strategic gameplay elements.<br><br>" +
@@ -33,20 +33,20 @@ const battleshipData = {
         "The main tasks include debugging and finishing the implementation.",
     tools: ["HTML", "CSS", "JS", "POO", "GIT", "GITHUB"],
     url: "https://github.com/mastakimm/connect4/",
-    liveUrl: "https://github.com/mastakimm/connect4/"
+    githubUrl: "https://github.com/mastakimm/connect4/"
 };
 
 const cssGeneratorData = {
     title: "CSS_GENERATOR",
     description: "This page contains the case study of CSS_GENERATOR ProjectDetails which includes the ProjectDetails Overview, Tools Used and Live Links to the official product.",
-    backgroundImage: "../../assets/sections/home_section_background.jpg",
-    image: "../../assets/sections/css_generator_HomePage.png",
+    backgroundImage: "../../assets/sections/home_section_background_rotated.jpg",
+    image: "../../assets/sections/projects/css_generator_HomePage.png",
     overview: "The CSS Spritesheet Generator is a PHP tool that automates the creation of CSS spritesheets by combining PNG images into one file and generating the corresponding CSS." +
         " It includes a UNIX command-line interface for easy operation." +
         " To use it, you need PHP installed and basic UNIX command-line knowledge.",
     tools: ["HTML", "CSS", "BOOTSTRAP", "GIT", "GITHUB"],
     url: "https://github.com/mastakimm/CSS_GENERATOR",
-    liveUrl: "https://github.com/mastakimm/CSS_GENERATOR",
+    githubUrl: "https://github.com/mastakimm/CSS_GENERATOR",
 };
 
 const data = [

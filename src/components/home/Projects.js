@@ -1,6 +1,6 @@
 import React from 'react';
-import YZ_main_screen from '../../assets/sections/YZ_HomePage.png';
-import BrainMaster_main_screen from '../../assets/sections/BrainMaster_MainPage.png'
+import YZ_main_screen from '../../assets/sections/projects/YZ_HomePage.png';
+import BrainMaster_main_screen from '../../assets/sections/projects/BrainMaster_MainPage.png'
 
 import Carousel from "./Carousel";
 import CaseStudyButton from "../../assets/buttons/CaseStudyButton";
@@ -9,8 +9,8 @@ import CaseStudyButton from "../../assets/buttons/CaseStudyButton";
 const YZ = {
     title: "YZ",
     description: "This page contains the case study of YZ ProjectDetails which includes the ProjectDetails Overview, Tools Used and Live Links to the official product.",
-    backgroundImage: "../../assets/sections/home_section_background.jpg",
-    image: "../../assets/sections/smartmockups_YZ.png",
+    backgroundImage: "../../assets/sections/home_section_background_rotated.jpg",
+    image: "../../assets/sections/projects/YZ_HomePage.png",
     overview: "YZ is a dynamic platform where you can share ideas, follow interests, and engage in real-time conversations," +
         " keeping you informed and connected. Express yourself freely through posts, photos, videos," +
         " and reactions, and customize your feed by following accounts and hashtags that interest you. Stay updated with instant notifications about interactions," +
@@ -24,26 +24,26 @@ const YZ = {
 const BrainMaster = {
     title: "BrainMaster",
     description: "This page contains the case study of BrainMaster ProjectDetails which includes the ProjectDetails Overview, Tools Used and Live Links to the official product.",
-    backgroundImage: "../../assets/sections/home_section_background.jpg",
-    image: "../../assets/sections/smartmockups_brainMaster.png",
+    backgroundImage: "../../assets/sections/home_section_background_rotated.jpg",
+    image: "../../assets/sections/projects/BrainMaster_MainPage.png",
     overview:
         "BrainMaster is a platform that offers engaging quizzes across various categories like science, history, and pop culture, allowing users to test and expand their knowledge." +
         " It provides instant results and detailed feedback to help users track their progress and improve." +
         " Additionally, BrainMaster includes an admin panel for educators and content creators to analyze quiz performance and user engagement.",
     tools: ["HTML", "CSS", "PHP", "SYMFONY", "SQL", "GIT", "GITHUB"],
     url: "https://github.com/mastakimm/BrainMaster/tree/master",
-    liveUrl: "https://github.com/mastakimm/BrainMaster/tree/master"
+    githubUrl: "https://github.com/mastakimm/BrainMaster/tree/master"
 };
 
 const PeerAssist = {
     title: "PeerAssist",
     description: "This page contains the case study of PeerAssist ProjectDetails which includes the ProjectDetails Overview, Tools Used and Live Links to the official product.",
-    backgroundImage: "../../assets/sections/home_section_background.jpg",
-    image: "../../assets/sections/project_section_project_1.png",
+    backgroundImage: "../../assets/sections/home_section_background_rotated.jpg",
+    image: "../../assets/sections/projects/project_section_project_1.png",
     overview: "This is a brief description of the PeerAssist. This is a brief description of the PeerAssist.",
     tools: ["HTML", "CSS", "PHP", "SYMFONY", "REACTJS", "SQL", "GIT", "GITHUB"],
     url: "https://example.com",
-    liveUrl: "https://live.example.com"
+    githubUrl: "https://live.example.com"
 };
 
 const Projects = React.forwardRef((props, ref) => {
