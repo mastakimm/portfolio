@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 import contactSectionBackgroundImage from "../../assets/sections/contact_session_background.jpg";
 
 const Contact = React.forwardRef((props, ref) => {
@@ -10,11 +11,21 @@ const Contact = React.forwardRef((props, ref) => {
 
         emailjs.sendForm('service_mvjzokz', 'template_p63noeb', form.current, 'Uzn5fzG0-xuO3ARjc')
             .then((result) => {
-                console.log(result.text);
-                alert('Message sent successfully!');
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Message Sent',
+                    text: `Thanks for your message !`,
+                    confirmButtonText: 'Great!',
+                    confirmButtonColor: '#e65952'
+                });
             }, (error) => {
-                console.log(error.text);
-                alert('Failed to send the message, please try again');
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Message Failed',
+                    text: 'Failed to send the message, please try again.',
+                    confirmButtonText: 'Great!',
+                    confirmButtonColor: '#e65952'
+                });
             });
 
         e.target.reset();
