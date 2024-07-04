@@ -17,6 +17,7 @@ const YZ = {
         " new followers, and trending topics.",
     tools: ["HTML", "CSS", "PHP", "LARAVEL", "REACTJS", "SQL", "GIT", "GITHUB"],
     url: "https://yz-epitech.eu",
+    githubUrl: "https://github.com/mastakimm/YZ",
     liveUrl: "https://yz-epitech.eu"
 };
 

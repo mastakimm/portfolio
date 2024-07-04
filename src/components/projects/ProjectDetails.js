@@ -1,12 +1,10 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Footer from "../Footer";
 
 const ProjectDetails = () => {
     const location = useLocation();
     const { project } = location.state || {};
-
-    const buttonText = project.liveUrl.includes("github") ? "Github" : "Live";
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -49,7 +47,7 @@ const ProjectDetails = () => {
                             letterSpacing: '0.05em',
                             width: '310px'
                         }}
-                        onClick={() => window.location.href = project.liveUrl}
+                        onClick={() => window.location.href = project.liveUrl || project.githubUrl}
                     >
                         Project Link
                     </button>
@@ -67,15 +65,15 @@ const ProjectDetails = () => {
                     <h3 className="text-2xl justify-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold">
                         Project Overview
                     </h3>
-                    <p className="text-xl sm:text-xl md:text-2xl lg:text-xl xl:text-xl 3xl:text-3xl py-4 justify-start"
-                       dangerouslySetInnerHTML={{__html: project.overview}}>
+                    <p className="text-xl sm:text-xl md:text-2xl lg:text-xl xl:text-xl 3xl:text-3xl pt-4 justify-start"
+                       dangerouslySetInnerHTML={{ __html: project.overview }}>
                     </p>
-                    <div className="w-full lg:w-10/12 flex flex-col py-20">
-                        <h3 className="text-2xl justify-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold py-4">
-                        Tools Used
+                    <div className="w-full lg:w-10/12 flex flex-col py-10">
+                        <h3 className="text-2xl justify-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold pb-4 pt-10">
+                            Tools Used
                         </h3>
                         <div className="rounded-lg w-full flex flex-wrap gap-4 justify-start">
-                        {project.tools.map((tool, index) => (
+                            {project.tools.map((tool, index) => (
                                 <span
                                     key={index}
                                     className="skill bg-gray-200 rounded-lg shadow-lg px-4 py-3 xl-px-6 xl:py-3 3xl:py-6 text-center overflow-hidden 3xl:text-2xl"
@@ -91,12 +89,12 @@ const ProjectDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-3/4 pb-20 md:px-12 lg:px-20 xl:px-24 3xl:px-24 rounded-lg block 3xl:space-y-8">
+                <div className="w-3/4 pb-20 md:px-12 lg:px-20 xl:px-24 3xl:px-24 rounded-lg block 3xl:space-y-8 pt-10">
                     <h4 className="text-left text-3xl 3xl:text-4xl font-bold mb-6 lg:mb-6 lg:self-start lg:mt-0">
-                        See Live
+                        Links
                     </h4>
-                    <button
-                        className="bg-button-red text-white rounded py-3 mr-2"
+                    {/*<button
+                        className="bg-button-black text-white rounded py-3 mr-2"
                         style={{
                             fontFamily: 'Comfortaa, sans-serif',
                             fontWeight: 'bold',
@@ -105,20 +103,36 @@ const ProjectDetails = () => {
                         }}
                         onClick={() => window.history.back()}
                     >
-                        Back
-                    </button>
-                    <button
-                        className="bg-button-red text-white rounded shadow py-3"
-                        style={{
-                            fontFamily: 'Comfortaa, sans-serif',
-                            fontWeight: 'bold',
-                            letterSpacing: '0.05em',
-                            width: '120px'
-                        }}
-                        onClick={() => window.location.href = project.liveUrl}
-                    >
-                        {buttonText}
-                    </button>
+                        Go Back
+                    </button>*/}
+                    {project.githubUrl && (
+                        <button
+                            className="bg-button-black text-white rounded shadow py-3 mr-2"
+                            style={{
+                                fontFamily: 'Comfortaa, sans-serif',
+                                fontWeight: 'bold',
+                                letterSpacing: '0.05em',
+                                width: '120px'
+                            }}
+                            onClick={() => window.location.href = project.githubUrl}
+                        >
+                            GitHub
+                        </button>
+                    )}
+                    {project.liveUrl && (
+                        <button
+                            className="bg-button-red text-white rounded shadow py-3"
+                            style={{
+                                fontFamily: 'Comfortaa, sans-serif',
+                                fontWeight: 'bold',
+                                letterSpacing: '0.05em',
+                                width: '120px'
+                            }}
+                            onClick={() => window.location.href = project.liveUrl}
+                        >
+                            Live
+                        </button>
+                    )}
                 </div>
             </section>
             <Footer />
