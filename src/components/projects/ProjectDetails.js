@@ -47,7 +47,7 @@ const ProjectDetails = () => {
                             letterSpacing: '0.05em',
                             width: '310px'
                         }}
-                        onClick={() => window.location.href = project.liveUrl || project.githubUrl}
+                        onClick={() => window.open(project.liveUrl)}
                     >
                         Project Link
                     </button>
@@ -93,18 +93,6 @@ const ProjectDetails = () => {
                     <h4 className="text-left text-3xl 3xl:text-4xl font-bold mb-6 lg:mb-6 lg:self-start lg:mt-0">
                         Links
                     </h4>
-                    {/*<button
-                        className="bg-button-black text-white rounded py-3 mr-2"
-                        style={{
-                            fontFamily: 'Comfortaa, sans-serif',
-                            fontWeight: 'bold',
-                            letterSpacing: '0.05em',
-                            width: '120px'
-                        }}
-                        onClick={() => window.history.back()}
-                    >
-                        Go Back
-                    </button>*/}
                     {project.githubUrl && (
                         <button
                             className="bg-button-black text-white rounded shadow py-3 mr-2"
