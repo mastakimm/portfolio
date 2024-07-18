@@ -16,9 +16,9 @@ const YZ = {
         " and reactions, and customize your feed by following accounts and hashtags that interest you. Stay updated with instant notifications about interactions," +
         " new followers, and trending topics.",
     tools: ["HTML", "CSS", "PHP", "LARAVEL", "REACTJS", "SQL", "GIT", "GITHUB"],
-    url: "https://yz-epitech.eu",
+    url: "https://yz-epitech.com",
     githubUrl: "https://github.com/mastakimm/YZ",
-    liveUrl: "https://yz-epitech.eu"
+    liveUrl: "https://yz-epitech.com"
 };
 
 const BrainMaster = {
