@@ -23,7 +23,7 @@ const Home = React.forwardRef((props, ref) => {
                     className="text-center text-2xl 3xl:text-3xl 4xl:text-4xl 4xl:tracking-widest 5xl:text-5xl 5xl:tracking-widest font-bold"
                     style={{fontFamily: 'Roboto, sans-serif'}}
                 >
-                    HEY THERE, I
+                    HEY THERE, I'
                 </h1>
                 <h1
                     className="text-center text-6xl 3xl:text-7xl 4xl:text-8xl 4xl:tracking-widest 5xl:text-9xl 5xl:tracking-widest font-bold pt-2"
