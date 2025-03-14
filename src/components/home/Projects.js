@@ -16,9 +16,8 @@ const YZ = {
         " and reactions, and customize your feed by following accounts and hashtags that interest you. Stay updated with instant notifications about interactions," +
         " new followers, and trending topics.",
     tools: ["HTML", "CSS", "PHP", "LARAVEL", "REACTJS", "SQL", "GIT", "GITHUB"],
-    url: "https://yz-epitech.com",
+    url: "https://github.com/mastakimm/YZ",
     githubUrl: "https://github.com/mastakimm/YZ",
-    liveUrl: "https://yz-epitech.com"
 };
 
 const BrainMaster = {
@@ -36,12 +35,12 @@ const BrainMaster = {
 };
 
 const PeerAssist = {
-    title: "PeerAssist",
-    description: "This page contains the case study of PeerAssist ProjectDetails which includes the ProjectDetails Overview, Tools Used and Live Links to the official product.",
+    title: "CompuTechMarket",
+    description: "This page contains the case study of CompuTechMarket which includes the ProjectDetails Overview, Tools Used and Links to the github repository.",
     backgroundImage: "../../assets/sections/home_section_background_rotated.jpg",
-    image: "../../assets/sections/projects/project_section_project_1.png",
+    image: "../../assets/sections/projects/computechmarket.webp",
     overview: "This is a brief description of the PeerAssist. This is a brief description of the PeerAssist.",
-    tools: ["HTML", "CSS", "PHP", "SYMFONY", "REACTJS", "SQL", "GIT", "GITHUB"],
+    tools: ["HTML", "CSS", "JAVA", "SPRING", "ANGULAR", "SQL", "GIT", "GITHUB"],
     url: "https://example.com",
     githubUrl: "https://live.example.com"
 };
