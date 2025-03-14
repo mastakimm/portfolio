@@ -16,6 +16,7 @@ const YZ = {
         " and reactions, and customize your feed by following accounts and hashtags that interest you. Stay updated with instant notifications about interactions," +
         " new followers, and trending topics.",
     tools: ["HTML", "CSS", "PHP", "LARAVEL", "REACTJS", "SQL", "GIT", "GITHUB"],
+    liveUrl: "https://github.com/mastakimm/YZ",
     url: "https://github.com/mastakimm/YZ",
     githubUrl: "https://github.com/mastakimm/YZ",
 };
@@ -31,6 +32,7 @@ const BrainMaster = {
         " Additionally, BrainMaster includes an admin panel for educators and content creators to analyze quiz performance and user engagement.",
     tools: ["HTML", "CSS", "PHP", "SYMFONY", "SQL", "GIT", "GITHUB"],
     url: "https://github.com/mastakimm/BrainMaster/tree/master",
+    liveUrl: "https://github.com/mastakimm/BrainMaster/tree/master",
     githubUrl: "https://github.com/mastakimm/BrainMaster/tree/master"
 };
 
@@ -43,6 +45,7 @@ const CompuTechMarket = {
         "This project serves as a practical learning experience in web development, database management, and e-commerce principles.",
     tools: ["HTML", "CSS", "JAVA", "SPRING", "ANGULAR", "SQL", "GIT", "GITHUB"],
     url: "https://github.com/mastakimm/CompuTechMarket",
+    liveUrl: "https://github.com/mastakimm/CompuTechMarket",
     githubUrl: "https://github.com/mastakimm/CompuTechMarket"
 };
 
@@ -119,7 +122,7 @@ const Projects = React.forwardRef((props, ref) => {
             <div
                 className="bg-gray-200 p-4 pt-4 md:p-12 lg:p-20 xl:p-24 3xl:p-24 flex flex-col xl:flex-row items-center space-y-4 md:space-y-4 xl:space-x-48 3xl:space-x-64">
                 <img
-                    src={YZ_main_screen}
+                    src={CompuTechMarket.image}
                     alt="ProjectDetails 1"
                     data-aos="zoom-in-up"
                     className="customShadow w-full md:w-3/4 lg:w-3/4 xl:w-6/12 2xl:w-5/12 3xl:w-5/12 rounded-lg"
