@@ -18,7 +18,8 @@ const ConnectFourData = {
         " This project is a digital implementation of the game, developed with a user-friendly interface and robust game logic.",
     tools: ["HTML", "CSS", "JS", "GIT", "GITHUB"],
     url: "https://github.com/mastakimm/connect4/",
-    githubUrl: "https://github.com/mastakimm/connect4/"
+    githubUrl: "https://github.com/mastakimm/connect4/",
+    liveUrl: "https://github.com/mastakimm/connect4/"
 };
 
 const battleshipData = {
@@ -47,6 +48,7 @@ const cssGeneratorData = {
     tools: ["HTML", "CSS", "BOOTSTRAP", "GIT", "GITHUB"],
     url: "https://github.com/mastakimm/CSS_GENERATOR",
     githubUrl: "https://github.com/mastakimm/CSS_GENERATOR",
+    liveUrl: "https://github.com/mastakimm/CSS_GENERATOR"
 };
 
 const data = [
