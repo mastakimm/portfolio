@@ -34,15 +34,16 @@ const BrainMaster = {
     githubUrl: "https://github.com/mastakimm/BrainMaster/tree/master"
 };
 
-const PeerAssist = {
+const CompuTechMarket = {
     title: "CompuTechMarket",
     description: "This page contains the case study of CompuTechMarket which includes the ProjectDetails Overview, Tools Used and Links to the github repository.",
     backgroundImage: "../../assets/sections/home_section_background_rotated.jpg",
     image: "../../assets/sections/projects/computechmarket.webp",
-    overview: "This is a brief description of the PeerAssist. This is a brief description of the PeerAssist.",
+    overview: "CompuTechMarket is a school project designed to simulate the development and operation of an e-commerce platform specializing in computer hardware and peripherals." +
+        "This project serves as a practical learning experience in web development, database management, and e-commerce principles.",
     tools: ["HTML", "CSS", "JAVA", "SPRING", "ANGULAR", "SQL", "GIT", "GITHUB"],
-    url: "https://example.com",
-    githubUrl: "https://live.example.com"
+    url: "https://github.com/mastakimm/CompuTechMarket",
+    githubUrl: "https://github.com/mastakimm/CompuTechMarket"
 };
 
 const Projects = React.forwardRef((props, ref) => {
@@ -129,16 +130,15 @@ const Projects = React.forwardRef((props, ref) => {
                 >
                     <h3
                         className="text-2xl text-center sm:text-start md:text-start lg:text-start xl:text-start 2xl:text-start 3xl:text-start sm:text-3xl md:text-3xl 3xl:text-4xl font-bold mb-4">
-                        PeerAssist
+                        CompuTechMarket
                     </h3>
                     <p className="text-xl sm:text-2xl md:text-2xl lg:text-xl xl:text-lg 3xl:text-3xl py-4 text-justify">
-                        PeerAssist is designed to facilitate peer support among students. Take a ticket, receive help,
-                        and improve together.
-                        Empowering students through collaborative assistance.
+                        CompuTechMarket offers a wide range of computers, components, and accessories.
+                        Build your dream PC or upgrade your setup.
                     </p>
                     <div
                         className="flex justify-center items-center sm:block md:block lg:block xl:block 2xl:block 3xl:block">
-                        <CaseStudyButton buttonText={"Case Study"} project={PeerAssist}/>
+                        <CaseStudyButton buttonText={"Case Study"} project={CompuTechMarket}/>
                     </div>
                 </div>
             </div>
